@@ -26,6 +26,8 @@ define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
 	$(INSTALL) -d 0755 $(@D)/finder-app/finder.sh $(TARGET_DIR)/usr/bin
 	$(INSTALL) -d 0755 $(@D)/finder-app/writer $(TARGET_DIR)/usr/bin
 	$(INSTALL) -d 0755 $(@D)/finder-app/finder-test.sh $(TARGET_DIR)/usr/bin
+	$(INSTALL) -d 0755 $(@D)/finder-app/aesdsocket $(TARGET_DIR)/usr/bin
+	$(INSTALL) -d 0755 $(@D)/finder-app/aesdsocket-start-stop $(TARGET_DIR)/usr/bin
 endef
 
 $(eval $(generic-package))
